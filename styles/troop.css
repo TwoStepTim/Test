@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+:root{
+--color: #333; 
+}
+
+body {
+  font-family: "peachy-keen-jf", sans-serif!important;
+  overflow-x: hidden;
+  
+}
+
+footer{
+  width: 100vw;
+  overflow-x: hidden;
+  margin-right: 50px;
+}
+
+
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1em;
+  }
+  
+  .card > a {
+    margin-bottom: 2em;
+  }
+  
+  .card h5{
+    margin-top: 10px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  
+  p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
+  }
+  
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .header h1{
+    font-size: 3vw;
+  }
+  .header img{
+    width: 70vh;
+    border-radius: 40px;
+    float: left;
+    
+  }
+  
+  .MainTitle {
+    width: 25vw;
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    margin-top: 50px;
+    align-items: center; 
+  }
+  
+  .content p {
+    font-size: 4vh;
+    width: 40vw;
+    height: 50vh; 
+    color: #4e7e3e;
+    margin-left: 3vw;
+  }
+  
+  
+  .Goals h3{
+    width: 60vw;
+    font-size: 2.5vw;
+    margin-right: 20vw;
+  }
+  
+  .Reasons{
+    height: 45vh;
+    margin-right: 10vw;
+    
+  }
+  .Goals{
+    margin-bottom: 70vh;
+  }
+  .Reasons li{
+    margin-top: 40px;
+    font-size: 2vw;
+  }
+  
+  .Goals img {
+    width: 70vh;
+    border-radius: 40px;
+    float: right; 
+  }
+  
+  .Notes{
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    flex-direction: column; /* Ensure items stack vertically */
+  
+  }
+  .Notes li{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5vw;
+    width: 80vw;
+  }
+  
+  
+  .expectations {
+    display: flex;
+    justify-content: space-between; /* Distribute space between cards */
+    padding: 0 10%; /* Add padding to the sides of the section */
+    margin-bottom: calc(50vh + 20px); /* Adjust margin based on footer height */
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add some space between the cards */
+  }
+  
+  .imgcard {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px; /* Add space between images */
+  }
+  
+  .imgcard img {
+    width: 50vh;
+    border-radius: 40px;
+  }
+  
+  .card1,
+  .card2 {
+    background-color: #f0f0f0; /* Background color */
+    border-radius: 40px; /* Border radius */
+    width: auto; /* Set a wider width for each card and subtract margin */
+    padding: 10px 20px;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+  }
+  
+  .card1 h3,
+  .card2 h3,
+  .card1 .topP,
+  .card2 .topP {
+    text-align: center; /* Center align text */
+  }
+  
+  .card1 p,
+  .card2 p {
+    font-size: 2.5vh;
+    text-align: center; /* Center align the text */
+    margin-left: -20px; /* Adjust left margin to move text to the left */
+    margin-right: -20px; /* Adjust right margin to move text to the left */
+    width: 20vw; /* Adjust width to include margins */
+  }
+  
+  .card1,
+  .card2 {
+    flex: 1; /* Make the cards fill available space evenly */
+    display: inline-block; /* Ensure cards are displayed inline */
+  }
+  
+  /* Custom CSS for footer */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center; /* Center align the text */
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to new line */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+}
+
+.footer-content {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center align the items vertically */
+  margin-top: 20px;
+}
+
+.footer-contact div {
+  margin-right: 20px; /* Add some space between items */
+}
+
+.footer-contact i {
+  margin-right: 5px; /* Adjust icon spacing */
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-disclaimer {
+  text-align: right;
+  margin-top: 20px;
+  margin-left:25vw;
+}
+
+  @media screen and (max-width: 600px) {
+    .content {
+      text-align: center; /* Center items on smaller screens */
+      flex-direction: column; /* Change to column on smaller screens */
+    }
+  
+    .content img {
+      width: 100%; /* Make the image take up full width on smaller screens */
+    }
+  }
+  @media (max-width: 768px) {
+    /* For tablets */
+    .content p {
+      font-size: 3vh;
+      width: 70vw;
+      margin-left: 0;
+    }
+    .footer{
+      margin-bottom: 10px;
+  
+    }
+    .Notes li {
+      font-size: 50vw;
+      width: 90vw;
+    }
+  
+    .card1 p,
+    .card2 p {
+      font-size: 2vh;
+      width: 60vw;
+      margin-left: 0;
+    }
+    .expectations {
+      margin-bottom: calc(200vh + 100px); /* Adjust margin based on footer height for larger screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* For phones */
+    .header  {
+      font-size: 6vw;
+      margin-top: 7vh;
+      margin-bottom: 33vh;
+    }
+    
+    .header h1{
+      font-size: 6vw;
+    }
+    .expectations h1{
+      text-align: center;
+      font-size: 6.1vw;
+    }
+  
+    .Goals h3{
+      width: 100vw;
+      font-size: 6.5vw;
+      margin-left: 20vw;
+      text-align: center;
+    }
+    .hamburger{
+      display: block;
+    }
+    .topnav{
+      display: none;
+    }
+    .Reasons li{
+      font-size: 6vw;
+      text-align: left;
+    }
+    
+    .Goals img {
+      margin-top: -70px;
+      width: 40vh;
+    }
+    .header img {
+      width: 90%;
+    }
+  
+    .MainTitle {
+      width: 70%;
+    }
+  
+    .content p {
+      font-size: 2.5vh;
+      width: 80vw;
+      margin-left: 0;
+    }
+  
+    .Notes li {
+      font-size: 5vw;
+      width: 90vw;
+    }
+    .card1,
+    .card2 {
+      padding: 10px 30px;
+  }
+    .card1 p,
+    .card2 p {
+      font-size: 4.5vw;
+      width: 70vw;
+      Margin-left: -30px; /* Adjust left margin to move text to the left */
+      margin-right: -30px;
+    }
+    .card1 .topP,
+    .card2 .topP {
+      text-align: center; /* Center align text */
+  }
+  
+  .Flexcontainer{
+    flex-direction: column; /* Change to column on smaller screens */
+    align-items: center;
+  }
+  .FlexLocation{
+    align-items:center ;
+    margin-bottom: 0px; 
+  
+  }
+  .FlexLocation h1{
+    font-size: 6.1vh;
+  }
+  .FlexLocation h3{
+    width: 80vw;
+    margin-left: 20px;
+  }
+  .footer-center{
+    margin-left: 10vh;
+  }
+  .footer-center a{
+    font-size: 3vh;
+  }
+  .footer-center i {
+    font-size: 2vh;
+  }
+  .footer-center i {
+    margin-right: -20px;
+    font-size: 3vh;
+    
+    
+  }
+  }
+  @media (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    .container {
+      background-attachment: scroll;
+    }
+  
+    .second {
+      height: auto;
+    }
+  
+    .second, .item {
+      flex-direction: column;
+    }
+  
+    .img {
+      height: 150px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    a {
+      padding: 0.8em 2.5em;
+    }
+  
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+  
